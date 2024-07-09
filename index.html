@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Yield Prediction</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <header>
+        <h1>Crop Yield Prediction</h1>
+    </header>
+    
+    <main>
+        <section id="inputSection" >
+            <h2>Enter Crop Details</h2>
+            <form id="cropForm">
+                <label for="cropName">Crop Name:</label>
+                <select id="cropName" name="cropName" required>
+                    <option>-- select crop--</option>
+                    <option value="Wheat">Wheat</option>
+                    <option value="Rice">Rice</option>
+                    <option value="Maize">Maize</option>
+                    <option value="Bengal Gram">Bengal Gram</option>
+                    <option value="Groundnut">Groundnut</option>
+                    <option value="Black Gram">Black Gram</option>
+                    <option value="Red Gram">Red Gram</option>
+                    <option value="Potato">Potato</option>
+                    
+                </select><br>
+                
+                <label for="areaSize">Crop Area Size (acres):</label>
+                <input type="number" id="areaSize" name="areaSize" min="1" required><br><br>
+                
+                <label for="soilFertility">Soil Fertility:</label>
+                <select id="soilFertility" name="soilFertility" required>
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select><br>
+                
+                <label for="plantHealth">Plant Health:</label>
+                <select id="plantHealth" name="plantHealth" required>
+                    <option value="poor">Poor</option>
+                    <option value="fair">Fair</option>
+                    <option value="good">Good</option>
+                </select><br>
+                
+                <button type="submit">Predict Yield</button>
+            </form>
+        </section>
+        
+        <section id="outputSection" style="display: none;">
+            <h2>Predicted Yield</h2>
+            <p id="yieldResult"></p>
+        </section>
+    </main>
+
+    <footer class="footer">
+
+        <div class="social">
+            <a href="https://www.linkedin.com/in/karthik-ganesh-c/"><i class='bx bxl-facebook-circle'></i></a>
+            <a href="https://www.linkedin.com/in/karthik-ganesh-c/"><i class='bx bxl-linkedin-square'></i></a>
+            <a href="https://www.linkedin.com/in/karthik-ganesh-c/"><i class='bx bxl-twitter' ></i></a>
+            <a href="https://www.linkedin.com/in/karthik-ganesh-c/"><i class='bx bxl-instagram-alt' ></i></a>
+        </div>
+
+        <ul class="list">
+            <li>
+                <a href="https://www.linkedin.com/in/karthik-ganesh-c/">About Me</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/karthik-ganesh-c/">Contact</a>
+            </li>
+            <li>
+                <a href="#">Privacy Policy</a>
+            </li>
+        </ul>
+        <p class="copyright">@ 2024 Karthikganesh | All Rights Reserved</p>
+    </footer>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
